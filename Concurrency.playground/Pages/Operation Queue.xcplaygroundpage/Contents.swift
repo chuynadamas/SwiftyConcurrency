@@ -39,6 +39,7 @@ class CustomOperation: Operation {
             return
         }
         self.executing(true)
+        
         //Asynchronous logic (eg: n/w calls) with callback
         for _ in 0..<1000 {
             if !isCancelled {
